@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('/font/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+    text-decoration: none;
+    ;
+    /* outline: 1px solid red; */
+}
+:root{
+    --bannerHeading: 100px;
+    --bannerHeading2: 50px;
+    --heading1: 70px;
+    --heading2: 40px;
+    --heading3: 24px;
+    --bodyText: 16px;
+    --bannerHeadingMobile: 40px;
+    --bannerHeading2Mobile: 20px;
+    --mainColor: #98694F;
+    --darkColor: #363636;
+    --heading1Mobile: 40px;
+
+}
+h1{
+    font-size: var(--heading1);
+}
+
+h3{
+    font-size: var(--heading3);
+}
+
+section{
+    height: max-content;
+    padding: 50px;
+}
+header{
+    text-align: center;
+    animation: fade-up 2s forwards;
+}
+
+footer{
+    background-color: var(--mainColor);
+    color: white;
+    text-align: center;
+    height: 30vh;
+    display: grid;
+    place-content: center;
+}
+
+footer > h2{
+    margin-bottom: 20px;
+}
+
+#banner{
+    background-image: url(/img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    gap: 100px
+    
+}
+
+#fav-menus{
+    background-color: var(--mainColor);
+    color: white ;
+}
+
+#typographi{
+    height: 80vh;
+}
+
+.text{
+    width: 50%;
+}
+
+.banner-heading{
+    font-size: var(--bannerHeading);
+    line-height: 100px;
+}
+
+.banner-heading2{
+    font-size: var(--bannerHeading2);
+}
+
+.brown{
+    color: #98694F;
+}
+
+.button{
+    padding: 20px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: var(--mainColor);
+    color: white;
+}
+
+.mt{
+    margin-top: 50px;
+}
+
+.mb{
+    margin-bottom: 20px;
+}
+
+.center{
+    transform: translateX(-50%, -50%);
+    position: relative;
+    right: -50%;
+}
+
+.menu{
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.reverse-flex{
+    flex-direction: row-reverse;
+}
+
+.link > a{
+    color: white;
+}
+
+.link{
+    border-radius: 40px;
+    padding: 20px;
+    transition: .5s;
+}
+.link:hover{
+    background-color: white;
+}
+.link:hover > a{
+    color: var(--mainColor)
+}
+
+.black{
+    color: #363636;
+}
+
+@keyframes fade-up {
+    from{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+}
