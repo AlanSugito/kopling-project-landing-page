@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'poppins';
-    src: url('font/poppins-regular-webfont.woff') format('woff');
+    src: url('/font/poppins-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -14,8 +14,6 @@
     box-sizing: border-box;
     font-family: "poppins";
     text-decoration: none;
-    ;
-    /* outline: 1px solid red; */
 }
 :root{
     --bannerHeading: 100px;
@@ -33,6 +31,7 @@
 }
 h1{
     font-size: var(--heading1);
+    font-weight: 700;
 }
 
 h3{
@@ -62,7 +61,7 @@ footer > h2{
 }
 
 #banner{
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/banner.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
